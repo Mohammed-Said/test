@@ -8,21 +8,21 @@
 ,{
   "id": "sw-2",
   "name": "Hoodie Basic Sweatshirt-Wine",
-  "price": 529,
+  "price": 329,
   "image": "images/sweatshirt/sw-2.jpeg",
   "color":"wine"
 }
 ,{
   "id": "sw-3",
   "name": "Hoodie Basic Sweatshirt-White",
-  "price": 559,
+  "price": 659,
   "image": "images/sweatshirt/sw-3.jpeg",
   "color":"white"
 }
 ,{
   "id": "sw-4",
   "name": "Hoodie Basic Sweatshirt-orange",
-  "price": 489,
+  "price": 389,
   "image": "images/sweatshirt/sw-4.jpeg",
   "color":"orange"
 }
@@ -36,7 +36,7 @@
 ,{
   "id": "sw-6",
   "name": "Hoodie Basic Sweatshirt-Silver",
-  "price": 559,
+  "price": 359,
   "image": "images/sweatshirt/sw-6.jpeg",
   "color":"silver"
 }

@@ -32,6 +32,43 @@ a {
     width: 1370px;
   }
 }
+.overlay{
+  position: fixed;
+  background-color: #232323cc;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+  z-index: 4;
+}
+.show{
+  display: block;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+.icon-cart{
+  position: relative;
+  cursor: pointer;
+}
+.header .icon-cart i{
+  font-size: 24px;
+}
+.header .icon-cart span{
+  position: relative;
+  font-size: 12px;
+  top: 5px;
+  left: -5px;
+  padding: 2px 5px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+/*  */
 .men-header{
   font-size: 24px;
   letter-spacing: 2px;
@@ -91,14 +128,21 @@ a {
   background-color: rgba(0,0,0,.1);
 }
 .men-clothes .products .item  i{
-  font-size: 18px;
+  font-size: 24px;
   position: absolute;
   top: 20px;
   left: 20px;
   display: none;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 3;
 }
 .men-clothes .products .item .image:hover i{
   display: block;
+}
+.men-clothes .products .item .image i.fa-solid{
+  display: block;
+  color: rgb(219, 51, 51);
 }
 .men-clothes .products .item .box .btns{
   display: flex;
@@ -156,12 +200,135 @@ a {
 }
 .men-clothes .products .item .content div:first-child{
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 15px;
 }
+
 .men-clothes .products .item .content div:last-child{
   font-size: 14px;
   padding: 10px 0;
   font-weight: 600;
   color: #666;
-  margin-bottom: 10px;
+}
+/* cart */
+.cart-tab{
+  width: 450px;
+  background-color: #fff;
+  color: #202020;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  bottom: 0;
+  display: grid;
+  padding: 20px 30px 100px;
+  grid-template-rows: 120px 1fr 70px;
+  transition: .5s; 
+  z-index: 999;
+}
+.cart-tab.showCart{
+  right: 0;
+}
+.cart-tab .cart-title{
+  margin: 5px 0;
+}
+.cart-tab .cart-title .close{
+  text-decoration: none;
+  color: #505050;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.cart-tab .cart-title .close i{
+  font-size: 17px;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  color: #5a5a5a;
+}
+.cart-tab .cart-title h5{
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: .08px;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 17px;
+}
+.cart-tab .btn{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+.cart-tab .btn a{
+  border: 1px solid #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .5s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-tab .btn a:first-child{
+  color: #fff;
+  background-color: #000;
+}
+.cart-tab .btn a:last-child{
+  background-color: #fff;
+}
+.cart-tab .btn  a{
+  text-decoration: none;
+  color: #000;
+}
+.cart-tab .btn a:first-child:hover{
+  background-color: #fff;
+  color: #000;
+}
+.cart-tab .btn a:last-child:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.cart-tab .btn a:first-child{
+  color: #fff;
+  background-color: #000;
+}
+.cart-tab .btn a:last-child{
+  background-color: #fff;
+}
+.cart-tab .btn  a{
+  text-decoration: none;
+  color: #000;
+}
+.list-cart .item img{
+  width: 100%;
+}
+.list-cart .item{
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.list-cart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+.list-cart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: #202020;
+  cursor: auto;
+}
+.list-cart{
+  overflow: auto;
+}
+.list-cart::-webkit-scrollbar{
+  width: 0;
 }

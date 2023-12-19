@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <title>Men clothes</title>
   </head>
   <body>
+    <header class="header">
+      <div class="icon-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+      </div>
+    </header>
     <section class="men-clothes">
+      <div><a href="#" class="num-asc">sort by num asc</a></div>
+      <div><a href="#" class="num-desc">sort by num desc</a></div>
+      <div><a href="#" class="alpha-asc">sort by alpha asc</a></div>
+      <div><a href="#" class="alpha-desc">sort by alpha desc</a></div>
       <header class="men-header">Men Clothes</header>
       <div class="container">
-        <aside class="categories">
+        <aside class="categories" style="display: none;">
           <form action="#" method="post">
             <h4>CATEGORIES</h4>
             <div class="category">
@@ -42,5 +52,21 @@
         </section>
       </div>
     </section>
+    <div class="cart-tab">
+      <div class="cart-title">
+        <a href="#" class="close">
+          <i class="fa-solid fa-xmark"></i>
+          <span> Close</span>
+        </a>
+        <h5>Your bag</h5>
+      </div>
+      <div class="list-cart">
+      </div>
+      <div class="btn">
+        <a class="checkOut">Check Out</a>
+        <a class="view-cart" href="cart.html">view cart</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
   </body>
 </html>

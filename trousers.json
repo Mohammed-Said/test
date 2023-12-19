@@ -1,7 +1,7 @@
 [{
   "id": "tr-1",
   "name": "Slim Fit JR Pants Snowy",
-  "price": 499,
+  "price": 599,
   "image": "images/trousers/tr1.jpg",
   "color":"SNOWY"
 }
@@ -22,14 +22,14 @@
 ,{
   "id": "tr-4",
   "name": "Gabardine P-Pant-Black",
-  "price": 459,
+  "price": 359,
   "image": "images/trousers/tr4.jpg",
   "color":"Black"
 }
 ,{
   "id": "tr-5",
   "name": "Gabardine P-Pant-Dark Gray",
-  "price": 469,
+  "price": 669,
   "image": "images/trousers/tr5.jpeg",
   "color":"Dark Gray"
 }
@@ -43,14 +43,14 @@
 ,{
   "id": "tr-7",
   "name": "Pocket Leggings Sweatpants Oily",
-  "price": 369,
+  "price": 699,
   "image": "images/trousers/tr7.jpeg",
   "color":"Oily"
 }
 ,{
   "id": "tr-8",
   "name": "Leggings Sweatpants White ",
-  "price": 399,
+  "price": 359,
   "image": "images/trousers/tr8.jpeg",
   "color":"White"
 }
